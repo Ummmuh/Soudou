@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Logement</title>
+  <link rel="stylesheet" href="style/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Menu de navigation -->
+  <nav>
+    <ul>
+        <li class="logo"><a href="index.html">Soudou</a></li>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.php">Nos Services</a></li>
+      <li><a href="add_location.php">Proposer une location</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Slider avec images et boutons -->
+  <section class="slider">
+    <div class="slide active"> <!-- Premier slide actif par défaut -->
+      <img src="images/img3.png" alt="Logement 1">
+      <div class="overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher un logement..." class="search-bar">
+            <i class="fas fa-search search-icon"></i> <!-- Icône de recherche -->
+          </div>          
+        <button onclick="window.location.href='services.php'">Trouver mon logement</button>
+        <button onclick="window.location.href='add_location.php'">Proposer une location</button>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/img6.jpeg" alt="Logement 2">
+      <div class="overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher un logement..." class="search-bar">
+            <i class="fas fa-search search-icon"></i> <!-- Icône de recherche -->
+          </div> 
+        <button onclick="window.location.href='services.php'">Trouver mon logement</button>
+        <button onclick="window.location.href='add_location.php'">Proposer une location</button>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/img10.png" alt="Logement 3">
+      <div class="overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher un logement..." class="search-bar">
+            <i class="fas fa-search search-icon"></i> <!-- Icône de recherche -->
+          </div> <br>
+        <button onclick="window.location.href='services.php'">Trouver mon logement</button>
+        <button onclick="window.location.href='add_location.php'">Proposer une location</button>
+      </div>
+    </div>
+  </section>
+   <!-- Section des logements les plus tops -->
+   <section class="top-listings">
+    <h2>Les logements les plus tops</h2>
+    <div class="listing-container">
+      <div class="listing-item">
+        <img src="images/logement1.jpg" alt="Logement 1">
+        <div class="listing-description">
+          <h3>Logement 1</h3>
+          <p>Description du logement 1.</p>
+        </div>
+      </div>
+      <div class="listing-item">
+        <img src="images/logement2.jpg" alt="Logement 2">
+        <div class="listing-description">
+          <h3>Logement 2</h3>
+          <p>Description du logement 2.</p>
+        </div>
+      </div>
+      <div class="listing-item">
+        <img src="images/logement3.jpg" alt="Logement 3">
+        <div class="listing-description">
+          <h3>Logement 3</h3>
+          <p>Description du logement 3.</p>
+        </div>
+      </div>
+      <div class="listing-item">
+        <img src="images/logement4.jpg" alt="Logement 4">
+        <div class="listing-description">
+          <h3>Logement 4</h3>
+          <p>Description du logement 4.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="script/slider.js"></script>
+</body>
+</html>

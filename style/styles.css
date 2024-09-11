@@ -1,0 +1,174 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ /* Style général pour le menu de navigation */
+ nav{
+    margin-top: 25px;
+ }
+nav ul {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 15px; 
+  }
+  
+  nav .logo {
+    color: #640c0c;
+    flex: 1; 
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+  }
+  
+  /* Style des liens du menu */
+  nav a {
+    text-decoration: none;
+    color: #000; /* Couleur du texte */
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    color: #640c0c; /* Couleur au survol */
+  }
+  
+  
+  /* Slider style */
+  .slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  
+  .slide {
+    display: none; /* On masque toutes les slides par défaut */
+    position: relative;
+  }
+  
+  .slide.active { /* Le premier slide s'affiche par défaut */
+    display: block;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Conteneur pour la barre de recherche avec l'icône */
+.search-container {
+    position: relative;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  /* Barre de recherche */
+  .search-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px; /* Espace entre la barre de recherche et les boutons */
+  }
+  
+  /* Barre de recherche */
+  .search-bar {
+    width: 100%;
+    padding: 10px 40px 10px 15px; /* Ajout d'espace à droite pour l'icône */
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Bords arrondis */
+    font-size: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style pour l'icône de recherche */
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+    pointer-events: none; /* L'icône ne doit pas interférer avec le champ de saisie */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .overlay button {
+    padding: 10px 20px;
+    background-color: rgba(99, 5, 5, 0.8);
+    border: white 5px rounded;
+    cursor: pointer;
+    font-size: 16px;
+    height: 50px;
+    color: white;
+    border-radius: 40px;
+  }
+  
+  .overlay button:hover {
+    background-color: #333;
+    color: white;
+  }
+  /* Section des logements les plus tops */
+.top-listings {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .top-listings h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .listing-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+    justify-content: space-between;
+    gap: 20px; /* Espace entre les éléments */
+  }
+  
+  .listing-item {
+    flex: 1 1 calc(25% - 20px); /* Prend 25% de la largeur moins l'espace entre les éléments */
+    box-sizing: border-box; /* Inclut le padding et les bordures dans la largeur */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .listing-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .listing-description {
+    padding: 15px;
+  }
+  
+  .listing-description h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  
+  .listing-description p {
+    margin: 0;
+    color: #666;
+  }
+  
